@@ -22,7 +22,8 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
-
+#conifig visualcode 
+.vscode
 # nyc test coverage
 .nyc_output
 
