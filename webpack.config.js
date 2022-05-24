@@ -1,4 +1,4 @@
-// Importando dependencia path
+gti // Importando dependencia path
 // dependencia del core de Node
 const path = require("path");
 // Plugins para Webpack
