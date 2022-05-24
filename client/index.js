@@ -2,7 +2,6 @@
 /* global M */
 
 // Incorporando estilos
-// a mi bundle
 import './styles/mystyle.css';
 
 /* Inicializando elementos de materializecss */

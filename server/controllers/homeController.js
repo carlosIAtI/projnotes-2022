@@ -18,7 +18,7 @@ const index = (req, res) => {
   // View-Models
   const viewModel = {
     title: 'Index Controller Working!!!',
-    author: 'Ivan Rivalcoba',
+    author: 'Carlos Hernandez Martinez',
     emojie,
   };
   res.render('home/indexView', viewModel);
@@ -27,9 +27,9 @@ const index = (req, res) => {
 // URL: Get /about
 const about = (req, res) => {
   res.render('home/aboutView', {
-    name: 'PhD Ivan Rivalcoba',
-    email: 'jorge.rr@gamadero.tecnm.mx',
-    url: 'https://github.com/rivalcoba-dev',
+    name: 'Carlos Hernandez Martinez',
+    email: 'l171130075@gamadero.tecnm.mx',
+    url: 'https://github.com/carlosIAtI/projnotes-2022',
     description:
       'Aplicación que te permite registrar ideas de proyectos. PwpcII-2022A',
     version: '0.0.alpha',
