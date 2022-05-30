@@ -7,7 +7,8 @@ const router = new Router();
 // Listar projects
 router.get(['/', '/index'], projectController.index);
 
-// Add projectsSS
+// Add projects
+// send form to register project idea
 router.get('/add', projectController.add);
 
 

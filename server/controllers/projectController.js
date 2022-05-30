@@ -5,7 +5,7 @@ const index = (req, res) => {
 }
 // add projects
 const add = (req, res) => {
-     res.send(`Add project`)
+     res.render('projects/addProjectView', {})
 }
 
 export default {
