@@ -42,7 +42,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 // Decidiendo si embebemos el webpack middleware
 if (nodeEnv === 'development') {
   // Embebiendo webpack a mi aplicación
-  console.log(`✍ Ejecutando en modo desarrollo 🤱👶`);
+  console.log(`modo desarrollo 🤱👶`);
 
   // Establiendo el modo de webpack en desarrollo
   // en el configurador
@@ -109,6 +109,7 @@ app.use((req, res, next) => {
   // );
 
   next(createError(404));
+  
 });
 
 // error handler
