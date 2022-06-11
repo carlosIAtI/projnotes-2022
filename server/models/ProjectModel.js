@@ -20,4 +20,4 @@ const ProjectSchema = new Schema({
 
 
 // Generar el modelo a partir de un esquema => compilar el modelo-"crear una instancia a partir schema"
-export default mongoose.model('project',ProjectSchema);
+export default mongoose.model('project', ProjectSchema);

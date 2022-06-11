@@ -2,8 +2,7 @@
   <div class="col s12 m10 offset-m1 l8 offset-l2">
     <div class="card">
       <div class="card-image">
-        <img src="https://user-images.githubusercontent.com/42922067/170994302-a091f6e4-1d2f-4bad-9547-561cfc7633ea.svg"
-          alt="blue print image" />
+        <img src="https://user-images.githubusercontent.com/42922067/170994302-a091f6e4-1d2f-4bad-9547-561cfc7633ea.svg" alt="blue print image" />
         <span class="card-title">
           Registrar Proyecto
         </span>
@@ -14,24 +13,50 @@
             <label for="project-name">
               Nombre
             </label>
-            <input placeholder="Ingrese el nombre del proyecto" type="text" id="project-name" name="name"
-              class="validate" />
+            <input
+              placeholder="Ingrese el nombre del proyecto"
+              type="text"
+              id="project-name"
+              name="name"
+              class="validate"
+              value="{{project.name}}"
+              required
+            />
+            <span 
+            class="helper-text" 
+            data-error="Debe ingresar nombre al proyecto"
+            data-success="Correcto"></span>
             {{#if errorModel.nameError}}
-            <span style="color:red">Error {{errorModel.nameError}}</span>
+            <span style="color:red">Error: {{errorModel.nameError}}</span>
             {{/if}}
           </div>
           <div class="input-field">
             <label for="project-description">
               Descripción
             </label>
-            <textarea name="description" id="project-description" class="materialize-textarea"></textarea>
+            <textarea
+              name="description"
+              id="project-description"
+              class="materialize-textarea"
+              required
+            ></textarea>
+            {{project.description}}
+            <span
+            class="helper-text"
+            data-error="Debe ingresar descripcion al proyecto"
+            data-success="Correcto"></span>
             {{#if errorModel.descriptionError}}
-            <span style="color:red">Error {{errorModel.descriptionError}}</span>
+            <span style="color:red"> 
+              Error: {{errorModel.descriptionError}}
+            </span>
             {{/if}}
           </div>
         </div>
         <div class="card-action">
-          <button type="submit" class="blue darken-3 waves-effect waves-light btn">
+          <button
+            type="submit"
+            class="blue darken-3 waves-effect waves-light btn"
+          >
             <i class="material-icons left">
               save
             </i>
